@@ -12,19 +12,17 @@ class App extends Component {
                 <div className="app">
                     <header className="app-header">
                         <h1 className="app-title">Luminis DevCon</h1>
+
+                        <Link to="/">Home</Link>
+                        <Link to="/schedule">Schedule</Link>
+                        <Link to="/speakers">Speakers</Link>
                     </header>
 
-                    <main className="app-intro">
+                    <main className="app-main">
                         <Route exact path="/" component={Home}/>
                         <Route path="/schedule" component={Schedule}/>
                         <Route path="/speakers" component={Speakers}/>
                     </main>
-
-                    <footer className="app-footer">
-                        <Link to="/">Home</Link>
-                        <Link to="/schedule">Schedule</Link>
-                        <Link to="/speakers">Speakers</Link>
-                    </footer>
                 </div>
             </Router>
         );
