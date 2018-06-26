@@ -1,19 +1,19 @@
 import './group.css';
-import React, { Component } from 'react';
+import React from 'react';
 import Session from './session';
 import PropTypes from 'prop-types';
 
-class Group extends Component {
-    render() {
-        return (
-            <div className="group-item">
-                <div className="group-item__header">{this.props.group.time}</div>
+// Since this component does nothing special in terms of data fetching or state handling we can use the stateless component
+// Read more about stateless components here: TODO: Add link
+const Group = (props) => {
+    return (
+        <div className="group-item">
+            <div className="group-item__header">{props.group.time}</div>
 
-                {this.props.group.sessions.map((session, index) => <Session key={`session-${index}`} session={session}/>)}
-            </div>
-        );
-    }
-}
+            {props.group.sessions.map((session, index) => <Session key={`session-${index}`} session={session}/>)}
+        </div>
+    );
+};
 
 Group.propTypes = {
     group: PropTypes.objectOf({
