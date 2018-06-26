@@ -13,6 +13,9 @@ class Session extends Component {
 
     // fn = () => {... is used to bind to the component scope
     toggleCollapse = () => {
+        // TODO: Why the function again?
+        // Mutation in javascript is weird, annoying and an accident waiting to happen.
+        // Below we create a new state object with a new isCollapsed value
         this.setState(prevState => {
             prevState.isCollapsed = !prevState.isCollapsed;
             return prevState;
@@ -28,6 +31,7 @@ class Session extends Component {
                     // Only show the following div when the component state is not collapsed
                     !this.state.isCollapsed && (
                         <div>
+                            {/* TODO: come up with something nice here*/}
                             {this.props.session.speakerNames}
                         </div>
                     )
