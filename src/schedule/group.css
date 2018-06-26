@@ -1,0 +1,10 @@
+.group-item {
+    padding: 10px;
+}
+
+.group-item__header {
+    font-size: 1.2em;
+    background: #222;
+    color: white;
+    padding: 5px;
+}

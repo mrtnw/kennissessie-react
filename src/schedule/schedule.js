@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { CONFERENCE_DATA } from '../data/conference-data';
-import GroupItem from './groupItem';
+import Group from './group';
 import PropTypes from 'prop-types';
 
 // TODO: Add tests
@@ -16,21 +16,26 @@ class Schedule extends Component {
         return (
             <div>
                 {
-                    // Loop over each group to show a GroupItem
-                    this.groups.map((group, index) => <GroupItem group={group} key={`groupItem-${index}`}/>)
+                    // Loop over each group to show a Group
+                    this.groups.map((group, index) => <Group group={group} key={`groupItem-${index}`}/>)
                 }
             </div>
         );
     }
 }
 
-// TODO: Fill proptypes
+// TODO: Fill proptypes correctly
 Schedule.propTypes = {
     group: PropTypes.objectOf({
         time: PropTypes.string,
-        sessions: PropTypes.arrayOf({
+        session: PropTypes.objectOf({
             id: PropTypes.number,
-            name: PropTypes.string
+            name: PropTypes.string,
+            description: PropTypes.string,
+            timeStart: PropTypes.string,
+            timeEnd: PropTypes.string,
+            speakerNames: PropTypes.arrayOf(PropTypes.string),
+            language: PropTypes.string
         })
     })
 };
