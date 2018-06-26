@@ -26,9 +26,9 @@ class Schedule extends Component {
 
 // TODO: Fill proptypes correctly
 Schedule.propTypes = {
-    group: PropTypes.objectOf({
+    group: PropTypes.shape({
         time: PropTypes.string,
-        session: PropTypes.objectOf({
+        session: PropTypes.shape({
             id: PropTypes.number,
             name: PropTypes.string,
             description: PropTypes.string,

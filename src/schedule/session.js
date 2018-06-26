@@ -2,6 +2,7 @@ import './session.css';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+// TODO: add tests
 class Session extends Component {
     constructor(props) {
         super(props);
@@ -43,7 +44,7 @@ class Session extends Component {
 }
 
 Session.propTypes = {
-    session: PropTypes.objectOf({
+    session: PropTypes.shape({
         id: PropTypes.number,
         name: PropTypes.string,
         description: PropTypes.string,

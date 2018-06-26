@@ -3,6 +3,7 @@ import React from 'react';
 import Session from './session';
 import PropTypes from 'prop-types';
 
+// TODO: Add tests
 // Since this component does nothing special in terms of data fetching or state handling we can use the stateless component
 // Read more about stateless components here: TODO: Add link
 const Group = (props) => {
@@ -16,9 +17,9 @@ const Group = (props) => {
 };
 
 Group.propTypes = {
-    group: PropTypes.objectOf({
+    group: PropTypes.shape({
         time: PropTypes.string,
-        session: PropTypes.objectOf({
+        session: PropTypes.shape({
             id: PropTypes.number,
             name: PropTypes.string,
             description: PropTypes.string,
