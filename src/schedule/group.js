@@ -2,6 +2,7 @@ import './group.css';
 import React from 'react';
 import Session from './session';
 import PropTypes from 'prop-types';
+import { ListHeader } from '../common/list-header';
 
 // TODO: Add tests
 // Since this component does nothing special in terms of data fetching or state handling we can use the stateless component
@@ -9,7 +10,7 @@ import PropTypes from 'prop-types';
 const Group = (props) => {
     return (
         <div className="group-item">
-            <div className="group-item__header">{props.group.time}</div>
+            <ListHeader title={props.group.time}/>
 
             {props.group.sessions.map((session, index) => <Session key={`session-${index}`} session={session}/>)}
         </div>
