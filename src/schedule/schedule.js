@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { CONFERENCE_DATA } from '../data/conference-data';
 import Group from './group';
-import PropTypes from 'prop-types';
 
 // TODO: Add tests
 class Schedule extends Component {
@@ -9,7 +8,9 @@ class Schedule extends Component {
         super(props);
 
         // Get the conference data from last year
-        this.groups = CONFERENCE_DATA.schedule[0].groups;
+        this.state = {
+            groups: CONFERENCE_DATA.schedule[0].groups
+        }
     }
 
     render() {
@@ -17,27 +18,11 @@ class Schedule extends Component {
             <div>
                 {
                     // Loop over each group to show a Group
-                    this.groups.map((group, index) => <Group group={group} key={`groupItem-${index}`}/>)
+                    this.state.groups.map((group, index) => <Group group={group} key={`groupItem-${index}`}/>)
                 }
             </div>
         );
     }
 }
-
-// TODO: Fill proptypes correctly
-Schedule.propTypes = {
-    group: PropTypes.shape({
-        time: PropTypes.string,
-        session: PropTypes.shape({
-            id: PropTypes.number,
-            name: PropTypes.string,
-            description: PropTypes.string,
-            timeStart: PropTypes.string,
-            timeEnd: PropTypes.string,
-            speakerNames: PropTypes.arrayOf(PropTypes.string),
-            language: PropTypes.string
-        })
-    })
-};
 
 export default Schedule;
