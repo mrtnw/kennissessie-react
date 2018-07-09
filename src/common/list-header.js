@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './list-header.css';
 
 export const ListHeader = (props) => (
