@@ -20,7 +20,7 @@ class Schedule extends Component {
                 {
                     this.state.groups.map((group, index) => (
                         // Show a container per group with a key for React to know what to update
-                        <div className="schedule-item" key={`groupItem-${index}`}>
+                        <div className="schedule-item" key={`schedule-item-${index}`}>
                             {/*Show a ListHeader per group*/}
                             <ListHeader title={group.time}/>
 
