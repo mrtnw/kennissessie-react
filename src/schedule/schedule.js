@@ -18,9 +18,10 @@ class Schedule extends Component {
         return (
             <div>
                 {
-                    // Loop over each group to show a Group
                     this.state.groups.map((group, index) => (
+                        // Show a container per group with a key for React to know what to update
                         <div className="schedule-item" key={`groupItem-${index}`}>
+                            {/*Show a ListHeader per group*/}
                             <ListHeader title={group.time}/>
 
                             {/* Loop over each session to show a Session*/}
