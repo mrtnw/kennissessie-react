@@ -1,6 +1,6 @@
 .session {
     padding: 20px 0;
-    border-bottom: 1px solid grey;  /* TODO: Not last item */
+    border-bottom: 1px solid grey;
 }
 
 .session:hover {
