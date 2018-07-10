@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { CONFERENCE_DATA } from '../data/conference-data';
-import Group from './group';
+import { ListHeader } from '../common/list-header';
+import Session from './session';
 
 // TODO: Add tests
 class Schedule extends Component {
@@ -18,7 +19,14 @@ class Schedule extends Component {
             <div>
                 {
                     // Loop over each group to show a Group
-                    this.state.groups.map((group, index) => <Group group={group} key={`groupItem-${index}`}/>)
+                    this.state.groups.map((group, index) => (
+                        <div className="schedule-item" key={`groupItem-${index}`}>
+                            <ListHeader title={group.time}/>
+
+                            {/* Loop over each session to show a Session*/}
+                            {group.sessions.map((session, index) => (<Session key={`session-${index}`} session={session}/>))}
+                        </div>
+                    ))
                 }
             </div>
         );
