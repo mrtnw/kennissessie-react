@@ -15,7 +15,8 @@ This is the beginning of React, feel free to try more than what we have prepared
 1. In `speakers.js`, add a `Speaker` per speaker in the group
 1. In `speakers.js`, add a speaker as a prop of `Speaker`
 1. In `speaker.js`, show the speaker name 
-1. In `speaker.js`, use a click event to show and hide a detail view where you can see speaker details 
+1. In `speaker.js`, use a click event to show and hide a detail view where you can see speaker details
+1. In `speaker.test.js`, try to test the `Speaker` component
 
 1. In the folder about, create an `About` component 
 1. In `app.js`, create a new route to `/about`

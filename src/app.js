@@ -23,7 +23,7 @@ class App extends Component {
                         <Route exact path="/" component={Home}/>
                         <Route path="/schedule" component={Schedule}/>
                         <Route path="/speakers" component={Speakers}/>
-                        {/*TODO: Assignment 7, add a path to about*/}
+                        {/*TODO: Assignment 8, add a path to about*/}
                     </main>
                 </div>
             </Router>
