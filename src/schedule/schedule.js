@@ -3,7 +3,6 @@ import { CONFERENCE_DATA } from '../data/conference-data';
 import { ListHeader } from '../common/list-header';
 import Session from './session';
 
-// TODO: Add tests
 class Schedule extends Component {
     constructor(props) {
         super(props);
