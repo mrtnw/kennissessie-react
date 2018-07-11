@@ -6,3 +6,13 @@
 .session:hover {
     cursor: pointer;
 }
+
+.session__speakers {
+    display: flex;
+    padding-top: 10px;
+}
+
+.session__speaker {
+    flex: 1;
+    font-size: 0.9em;
+}

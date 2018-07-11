@@ -2,7 +2,6 @@ import './session.css';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-// TODO: add tests
 class Session extends Component {
     constructor(props) {
         super(props);
@@ -14,9 +13,7 @@ class Session extends Component {
 
     // fn = () => {... is used to bind to the component scope
     toggleCollapse = () => {
-        // TODO: Why the function again?
-        // Mutation in javascript is weird, annoying and an accident waiting to happen.
-        // Below we create a new state object with a new isCollapsed value
+        // Update the state
         this.setState(prevState => {
             prevState.isCollapsed = !prevState.isCollapsed;
             return prevState;
@@ -31,9 +28,8 @@ class Session extends Component {
                 {
                     // Only show the following div when the component state is not collapsed
                     !this.state.isCollapsed && (
-                        <div>
-                            {/* TODO: come up with something nice here*/}
-                            {this.props.session.speakerNames}
+                        <div className="session__speakers">
+                            {this.props.session.speakerNames.map(speakerName => <div className="session__speaker">{speakerName}</div> )}
                         </div>
                     )
                 }
