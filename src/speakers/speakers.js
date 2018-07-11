@@ -37,6 +37,7 @@ class Speakers extends Component {
                                     <ListHeader title={group.title}/>
 
                                     {/*TODO: Assignment 2, use the Speaker component*/}
+                                    {/*TODO: Assignment 3, add the speaker as props to the Speaker component*/}
                                     {/*TODO: Remove*/}
                                     {group.speakers.map(speaker => (<Speaker speaker={speaker}/>))}
                                 </div>
