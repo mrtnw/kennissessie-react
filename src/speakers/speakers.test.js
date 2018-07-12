@@ -9,7 +9,6 @@ describe('Speakers', () => {
         expect(headers.length).toBe(17);
     });
 
-    // TODO: Waarom werkt dit niet?
     it('should contain ListHeaders', () => {
         const wrapper = shallow(<Speakers/>);
         const headers = wrapper.find('ListHeader');

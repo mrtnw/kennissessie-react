@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { CONFERENCE_DATA } from '../data/conference-data';
-import { ListHeader } from '../common/list-header';
+import ListHeader from '../common/list-header';
 import Session from './session';
 
 class Schedule extends Component {
