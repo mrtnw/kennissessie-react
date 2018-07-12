@@ -29,6 +29,10 @@ After these assignments the `/speakers` page should show speakers grouped by the
 6. In `speaker.test.js`, try to test the `Speaker` component
 - The `speakers.test.js` already contains some tests, you can take this as a starting point. Otherwise see `https://jestjs.io/` and `http://airbnb.io/enzyme/`
 
+######About
+In the last 4 assignments we are going to make a new page with a route.
+We need to create a component, update the routes in `app.js` and do anything you like for the about page
+
 7. In the folder about, create an `About` component
 - We now only have a `tmp.txt` to show the about folder. Remove this and add `about.js` with the `About` component 
 8. In `app.js`, create a new route to `/about`
