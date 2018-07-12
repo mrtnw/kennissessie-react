@@ -19,6 +19,7 @@ After these assignments the `/speakers` page should show speakers grouped by the
 
 1. In `speakers.js`, add a `ListHeader` per group
     - The `ListHeader` is a common component which can be found `/common/list-header.js`. The import is already done in `speakers.js`
+    - For the title you can use the title property of a `group`
 2. In `speakers.js`, add a `Speaker` per speaker in the group
     - The `Speaker` is a component which can be found in `/speakers/speaker.js`. The import is already done in `speakers.js`
 3. In `speakers.js`, add a speaker as a prop of `Speaker`
