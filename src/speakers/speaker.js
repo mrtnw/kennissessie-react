@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Speaker extends Component {
-    // TODO: Assignment 5, add a event handle to show a detail view from the users
+    // TODO: Assignment - Speakers 5, add a event handle to show a detail view from the users
 
     render() {
         return (
             <div className="speaker">
-                {/*TODO: Assignment 4, show the speaker name*/}
+                {/*TODO: Assignment - Speakers 4, show the speaker name*/}
                 Speaker
             </div>
         );

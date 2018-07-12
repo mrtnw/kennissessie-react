@@ -2,9 +2,9 @@ import "./speakers.css";
 import React, { Component } from 'react';
 import { CONFERENCE_DATA } from '../data/conference-data';
 import _ from 'lodash';
-{/*TODO: Assignment 1, add the ListHeader with a proper title*/}
+{/*TODO: Assignment - Speakers 1, add the ListHeader with a proper title*/}
 // import ListHeader from '../common/list-header';
-{/*TODO: Assignment 2, use the Speaker component*/}
+{/*TODO: Assignment - Speakers 2, use the Speaker component*/}
 // import Speaker from './speaker';
 
 class Speakers extends Component {
@@ -34,9 +34,9 @@ class Speakers extends Component {
                     this.state.groups.map((group, index) => {
                             return (
                                 <div className="speaker-item" key={`speaker-item-${index}`}>
-                                    {/*TODO: Assignment 1, add the ListHeader with a proper title*/}
-                                    {/*TODO: Assignment 2, use the Speaker component*/}
-                                    {/*TODO: Assignment 3, add the speaker as props to the Speaker component*/}
+                                    {/*TODO: Assignment - Speakers 1, add the ListHeader with a proper title*/}
+                                    {/*TODO: Assignment - Speakers 2, use the Speaker component*/}
+                                    {/*TODO: Assignment - Speakers 3, add the speaker as props to the Speaker component*/}
                                 </div>
                             )
                         }
