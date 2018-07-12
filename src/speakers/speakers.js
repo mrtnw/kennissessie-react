@@ -2,8 +2,10 @@ import "./speakers.css";
 import React, { Component } from 'react';
 import { CONFERENCE_DATA } from '../data/conference-data';
 import _ from 'lodash';
-import ListHeader from '../common/list-header';
-import Speaker from './speaker';
+{/*TODO: Assignment 1, add the ListHeader with a proper title*/}
+// import ListHeader from '../common/list-header';
+{/*TODO: Assignment 2, use the Speaker component*/}
+// import Speaker from './speaker';
 
 class Speakers extends Component {
     constructor(props) {
