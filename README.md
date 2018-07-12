@@ -11,6 +11,11 @@ This is the beginning of React, feel free to try more than what we have prepared
 - Run `npm test` to start Jest. The first assignments are done when all tests succeed
 
 #####Assignments
+######Speaker
+In the first 6 assignments we are going to fill the speakers page. 
+We need to use `ListHeaders`, similar as in the schedule page. We need to use and modify the `Speaker` component too. 
+After these assignments the `/speakers` page should show speakers grouped by the first letter of their name. When you click on the speaker you should be able to see the details 
+
 1. In `speakers.js`, add a `ListHeader` per group
 - The `ListHeader` is a common component which can be found `/common/list-header.js`. The import is already done in `speakers.js`
 2. In `speakers.js`, add a `Speaker` per speaker in the group
