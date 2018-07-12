@@ -16,14 +16,14 @@ class App extends Component {
                         <Link to="/">Home</Link>
                         <Link to="/schedule">Schedule</Link>
                         <Link to="/speakers">Speakers</Link>
-                        <Link to="/about">About</Link>
+                        {/*TODO: Assignment 8, add a path to about*/}
                     </header>
 
                     <main className="app-main">
                         <Route exact path="/" component={Home}/>
                         <Route path="/schedule" component={Schedule}/>
                         <Route path="/speakers" component={Speakers}/>
-                        {/*TODO: Assignment 8, add a path to about*/}
+                        {/*TODO: Assignment 9, use About component*/}
                     </main>
                 </div>
             </Router>
