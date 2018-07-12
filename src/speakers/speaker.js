@@ -8,7 +8,7 @@ class Speaker extends Component {
     render() {
         return (
             <div className="speaker">
-                {/*TODO: Assignment - Speakers 4, show the speaker name*/}
+                //TODO: Assignment - Speakers 4, show the speaker name
                 Speaker
             </div>
         );
