@@ -33,7 +33,7 @@ class Speakers extends Component {
                 {
                     this.state.groups.map((group, index) => {
                             return (
-                                <div className="speaker-item" key={`speaker-item-${index}`}>
+                                <div className="group-item" key={`group-item-${index}`}>
                                     {/*TODO: Assignment - Speakers 1, add the ListHeader with a proper title*/}
                                     {/*TODO: Assignment - Speakers 2, use the Speaker component*/}
                                     {/*TODO: Assignment - Speakers 3, add the speaker as props to the Speaker component*/}
